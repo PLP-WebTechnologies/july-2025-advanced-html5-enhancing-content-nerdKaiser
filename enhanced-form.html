@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>PLP Hackathon Registration</title>
+</head>
+
+<body>
+    <!--header for the page-->
+    <header>
+          <h1>PLP AUGUST COFFEE AND CODE 2025</h1>
+        <p>Join us for a day of innovation, networking, learning and coffee.</p>
+    </header>
+
+<main>
+    <!-- Hackathon highlights -->
+     <section>
+        <h2>Why Join?</h2>
+        <ul>
+            <li>Network with top developers</li>
+            <li>Win amazing prizes and recognition</li>
+            <li>Access exclusive mentorship sessions from experts</li>
+            <li>Collaborate on exciting projects</li>
+            <li>Enhance your skills with hands-on experience</li>
+            <li>Enjoy complimentary coffee and snacks</li>
+        </ul>
+    </section>
+
+    <!--Schedule Outline-->
+    <section>
+        <h2>The Schedule</h2>
+        <table border = "1" cellpadding = "8" cellspacing = "0">
+            <caption>PLP Hackathon Schedule</caption>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Activity</th>
+                    <th>Lead</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>08:00 AM</td>
+                    <td>Check-in & Breakfast</td>
+                    <td>Organizing Team</td>
+                </tr>
+                <tr>
+                    <td>09:30 AM</td>
+                    <td>Opening Ceremony & Theme Reveal</td>
+                    <td>Hackathon Director</td>
+                </tr>
+                <tr>
+                    <td>10:00 AM</td>
+                    <td>Mentorship Sessions</td>
+                    <td>Mentors</td>
+                </tr>
+                <tr>
+                    <td>12:00 PM</td>
+                    <td>Coding Starts</td>
+                    <td>All Teams & Individuals</td>
+                </tr>
+                <tr>
+                    <td>04:00 PM </td>
+                    <td> Coding Ends</td>
+                    <td>All Teams & Individuals</td>
+                </tr>
+                 <tr>
+                    <td>05:00 PM </td>
+                    <td> Awards Ceremony</td>
+                    <td>Judges</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!--Media section-->
+    <section>
+        <h2> See the Action</h2>
+
+        <div>
+        <figure style="display: inline-block; margin-right: 20px;">
+            <img src="image.png" alt="PLP Session 1" width="200" height="250">
+            <figcaption>Session 1 Overview</figcaption>
+        </figure>
+        <figure style="display: inline-block;">
+            <img src="plp.jpeg" alt="PLP Session 2" width="300" height="250">
+            <figcaption>Session 2 Highlights</figcaption>
+        </figure>
+        </div>
+
+        <figure>
+            <video width="400" height="500" controls>
+                <source src="hackathon-highlights.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <figcaption>Highlights from the previous Hackathon sessions</figcaption>
+        </figure> 
+    </section>
+
+    <!--Registration form section-->
+<section>
+    <h2>Welcome to the PLP Hackathon Registration</h2>
+    <p>Please fill out the form below to register your team for the hackathon.</p>
+    <form action="/submit" method="POST">
+
+        <!--Name input with minlength and autocomplete-->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="full_name" autocomplete="name" placeholder="Enter your name" minlength="2" required>
+        <br><br>
+
+        <!--Email input with autocomplete-->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" autocomplete="email" placeholder="Enter your email" required>
+        <br><br>
+
+        <!--Kenyan phone number validated format-->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" pattern="^\+2547[0-9]{8}$" autocomplete="tel" placeholder="+2547XXXXXXXX" required>
+        <br><br>
+
+        <!--Team name input-->
+        <label for="team">Team Name:</label>
+        <input type="text" id="team" name="team"
+         placeholder="Enter team name" required>
+         <br><br>
+
+         <!--Team members input through dropdown list-->
+        <label for="teamSize">Team Size:</label>
+        <select id="teamSize" name="teamSize" required>
+            <option value="" disabled selected>Select team size</option>
+            <option value="1">1 (Solo)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+        </select>
+        <br><br>
+
+        
+        <button type="submit">Register</button>
+    </form>
+</section>
+</main>
+
+    <!--Footer section-->
+    <footer>
+        <p>Follow us on social media: 
+            <a href="https://twitter.com/plpcommunity" target="_blank">Twitter</a> | 
+            <a href="https://www.facebook.com/theplpcommunity" target="_blank">Facebook</a> | 
+            <a href="https://www.instagram.com/plpafrica" target="_blank">Instagram</a>
+        </p>
+        <small>&copy; 2025 Power Learn Project. All rights reserved.</small>
+    </footer>
+</body>
+
+</html>
